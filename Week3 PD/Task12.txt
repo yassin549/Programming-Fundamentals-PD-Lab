@@ -1,0 +1,79 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+int num;
+int total;
+int num1;
+int num2;
+int num3;
+int num4;
+int num5;
+int num6;
+int numberin2s;
+int numberin3s;
+int numberin2s1;
+int numberin2s2;
+int numberin2s3;
+int numberin3s1;
+int numberin3s2;
+int numberin3s3;
+
+
+cout << "Enter any four-digit number: ";
+cin >> num;
+
+numberin2s = num;
+numberin3s = num;
+
+num1 = num % 10;
+num = num / 10;
+cout << "Number is: " << num1;
+num2 = num % 10;
+num = num / 10;
+cout << "Number is: " << num2;
+num3 = num % 10;
+num = num / 10;
+cout << "Number is: " << num3;
+num4 = num % 10;
+num = num / 10;
+cout << "Number is: " << num4;
+num5 = num % 10;
+num = num / 10;
+cout << "Number is: " << num5;
+num6 = num % 10;
+num = num / 10;
+cout << "Number is: " << num6;
+
+total = num1 + num2 +num3 num4;
+cout << "Sum is: " << total;
+
+numberin2s1 = numberin2s % 100;
+numberin2s = numberin2s / 100;
+cout << "Number is groups of 2: " << numberin2s1;
+
+numberin2s2 = numberin2s % 100;
+numberin2s = numberin2s / 100;
+cout << "Number is groups of 2: " << numberin2s2;
+
+numberin2s3 = numberin2s % 100;
+numberin2s = numberin2s / 100;
+cout << "Number is groups of 2: " << numberin2s3;
+
+
+
+
+
+
+
+return 0;}
+
+
+
+
+
+
+
+
+
+

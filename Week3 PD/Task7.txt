@@ -1,0 +1,53 @@
+#include <iostream>
+using namepace std;
+int main(){
+
+string moviename;
+int adultPrice;
+int childPrice;
+int adultNumber;
+int childNumber;
+int donate;
+float total; 
+float amountAfterDonation;
+
+cout << "Enter movie name: ";
+cin >> name;
+
+cout << "Enter Adult Ticket Price: ";
+cin >> adultPrice;
+
+cout << "Enter Child Ticket Price: ";
+cin >> childPrice;
+
+cout << "Enter Number of Adult Tickets sold: ";
+cin >> adultNumber;
+
+cout << "Enter Number of Child Tickets sold: ";
+cin >> childNumber;
+
+cout << "Enter Percentage to donate: ";
+cin >> donate;
+
+total = (adultPrice * adultNumber) + (childPrice * childNumber);
+amountAfterDonation = total * (1 - (donate/100));
+
+cout << "Totol amount generated: " << total;
+cout << "Amount after donation: " << amountAfterDonation;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return 0;}

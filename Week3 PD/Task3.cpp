@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+float time;
+float acceleration;
+float finalVelocity;
+float initialVelocity;
+
+cout << "Enter Initial Velocity: ";
+cin >> initialVelocity;
+
+cout << "Enter Acceleration: ";
+cin >> acceleration;
+
+cout << "Enter Time: ";
+cin >> time;
+
+finalVelocity = (acceleration * time) + initialVelocity;
+
+cout << "Final Veocity is: " << finalVelocity;
+
+return 0;}
