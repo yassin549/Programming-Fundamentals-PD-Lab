@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+int charge;
+int time;
+int current;
+
+cout << "Enter charge: ";
+cin >> charge;
+cout << "Enter time: ";
+cin >> time;
+current = time * charge;
+cout << "Current is: " << current;
+
+
+
+
+return 0;}

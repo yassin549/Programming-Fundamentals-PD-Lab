@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+int rollNumber;
+float aggregate;
+char grade;
+string name;
+cin >> name;
+
+
+
+
+return0;}
