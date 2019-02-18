@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+int marks;
+cin >> marks;
+
+if ( marks > 50 ) {
+
+	cout << "You have passed the first Quiz of PF!" << endl;
+
+}
+
+if ( marks = 50) {
+
+	cout << "Your Marks are 50!" << endl;
+}
+
+
+
+
+
+
+
+
+return 0;}
