@@ -1,0 +1,24 @@
+# include <iostream>
+using namespace std;
+
+void printmenu();
+
+int main(){
+ printmenu();
+return 0;}
+
+void printmenu()
+{
+ cout <<  "===================================================="         << endl;
+ cout <<  "===================================================="         << endl;
+ cout <<  "$                                                  $"         << endl;
+ cout <<  "$               UNIVERSITY ADMISSION               $"         << endl;
+ cout <<  "$                MANAGEMENT SYSTEM                 $"         << endl;
+ cout <<  "$                                                  $"         << endl;
+ cout <<  "===================================================="         << endl;
+ cout <<  "===================================================="         << endl << endl;
+ cout <<  "*********************MAIN MENU**********************" << endl;
+ cout <<  "1. Calculate aggregate" << endl;
+ cout <<  "2. Compare marks"<< endl << endl;
+ cout <<  "Enter 1 for option 1 and 2 for option 2: ";
+}

@@ -1,0 +1,35 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+void gotoxy(int x, int y)
+{
+ COORD coordinates;
+ coordinates.X = x;
+ coordinates.Y = y;
+ SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinates);
+}
+
+int main(){
+
+ int x = 1;
+ int y = 1;
+
+ system("cls");
+
+ while (true)
+ {
+	cout << x;
+	x += 1;
+
+ }
+ return 0;}
+
+
+
+
+
+
+
+
+

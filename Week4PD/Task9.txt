@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void reverse(string);
+
+int main(){
+
+
+string input;
+
+cout << "Enter your input: " << endl;
+cin >> input;
+
+reverse(input);
+
+return 0;}
+
+
+void reverse(input)
+{
+ if (input == "true")
+ {
+	cout << "false" << endl;
+ }
+ if (input == "false")
+ {
+ 	cout << "true" << endl;
+ }
+}
