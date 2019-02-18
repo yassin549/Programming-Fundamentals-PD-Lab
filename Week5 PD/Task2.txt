@@ -1,0 +1,54 @@
+# include <iostream>
+using namespace std;
+
+float finalvolume(float length, float width, float height);
+
+int main(){
+	float length, width, height, conlen, conwidth, conhei;
+	string unit;
+
+	cout << "Enter Length in meters: ";
+	cin >> length;
+	cout << "Enter Width in meters: ";
+	cin >> width;
+	cout << "Enter Height in meters: ";
+	cin >> height;
+	cout << "Enter unit in which you want answer: ";
+	cin >> unit;
+
+	if (units == "millimeteres"){
+	conlen = length * 1000;
+	conwidth = width * 1000;
+	conhei = height * 1000;
+	}
+	
+	if (units == "centimeters"){
+	conlen = length * 100;
+	conwidth = width * 100;
+	conhei = height * 100;
+	}
+
+	if (units == "kilometers"){
+	conlen = length / 1000;
+	conwidth = width / 1000;
+	conhei = height / 1000;
+	}
+
+	if (units == "meters"){
+	conlen = lenght;
+	conwidth = width;
+	conhei = height;
+	}
+
+	volume = finalvolume(conlen, conwidth, conhei);	
+
+	cout << volume " cubic " << unit << endl;
+
+	return 0;}
+
+
+float finalvolume(float length, float width, float height)
+{
+	float volume = (1/3) * lenght * width * height;
+	return volume;
+}

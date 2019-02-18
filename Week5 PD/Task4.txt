@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+
+int main(){
+
+	int hours, days, workers;
+
+	cout << "Enter number of hours needed to complete the project in the range 0-200000: ";
+	cin >> hours;
+cout << hours;
+	cout << "Enter numberof  days the firm has to complete the project in the range 0-20000: ";
+	cin >> days;
+	cout << "Enter number of all workers in the range 0-200: ";
+	cin >> workers;
+  
+
+
+
+
+
+return 0;}
