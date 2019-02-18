@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+float height(float angle, int adjacent);
+
+int main()
+{
+
+int adjacent = 43;
+float angle = 30;
+float rad, answer;
+
+rad = angle / 57.2958;
+
+answer = height(rad, adjacent);
+cout << "Answer is: " << answer << endl;
+
+return 0;}
+
+float(float angle, int adjacent)
+{
+ int height = adjacent * (tan(angle));
+ return height;
+} 

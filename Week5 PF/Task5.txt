@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int minutes(int min, int hours);
+int Hour(int hour);
+
+int main()
+{
+    int min, hour, minfinal, hourfinal;
+
+    while (true)
+    {
+        cout << "Enter hours: ";
+        cin >> hour;
+        cout << "Enter minutes: ";
+        cin >> min;
+
+        minfinal = minutes(min, hour);
+        hourfinal = Hour(hour);
+    }
+    return 0;
+}
+
+int minutes(int min, int hours)
+{
+    min += 15;
+
+    if (min > 60)
+    {
+        min = min % 60;
+        Hour(hours + 1);
+    }
+    return min;
+}
+
+int Hour(int hours)
+{
+    if (hours > 23)
+    {
+        hours = 00;
+    }
+    return hours;
+}

@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int volumepercentage(int volume, float pipe1, float pipe2);
+int pipe1vol(int pipe1, float hours);
+int pipe2vol(int pipe2, float hours);
+int pipe1percent(int volume, int pipe1flow);
+int pipe2percent(int volume, int pipe2flow);
+
+int main()
+{  
+ int volume, pipe1, pipe2, pipe1flow, pipe2flow, filledvolume, pipe1per, pipe2per;
+ float hours;
+
+ cout << "Enter volume of Tank in the range 1 to 10000: ";
+ cin >> volume;
+ cout << "Enter flow rate of pipe 1 in the range 1 to 5000: ";
+ cin >> pipe1;
+ cout << "Enter flow rate of pipe 2 in the range 1 to 5000: ";
+ cin >> pipe2;
+ cout << "Enter number of hours the worker is absent in the range 1.0 to 24.00: ";
+ cin >> hours;
+
+ pipe1flow = pipe1vol(pipe1, hours); 
+ pipe2flow = pipe2vol(pipe2, hours);
+
+ filledvolume = volumepercentage(volume, pipe1flow, pipe2flow);
+
+ pipe1per = pipe1percent(filledvolume, pipe1flow);
+ pipe2per = pipe2percent(filledvolume, pipe2flow);
+
+ if ((pipe1flow + pipe2flow) > volume)
+ {
+	extra = (pipe1flow + pipe2flow) - volume;
+	cout << "For " << hours << " hours the pool overflows with " << extra << " litres." << endl;
+ }
+
+ if ((pipe1flow + pipe2flow) <= volume)
+ {
+	cout << "The pool is " << filledvolume << "%  full. Pipe1: " << pipe1per << "%. Pipe2: " << pipe2per << "%." << endl;
+ }
+return 0;}
+
+int volumepercentage(int volume, float pipe1, float pipe2)
+{
+ 
+
+
+
+}
