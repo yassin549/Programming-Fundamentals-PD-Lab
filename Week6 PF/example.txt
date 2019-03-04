@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int price;
+
+cout << "Enter the price: ";
+cin >> price;
+
+if (price > 1500)
+ {
+ cout << "Do not buy the dress," << endl;
+ }
+else
+ {
+ cout << "Buy the dress." << endl;
+ }
+
+return 0;}

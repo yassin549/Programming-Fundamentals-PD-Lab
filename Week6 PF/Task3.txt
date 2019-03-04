@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+string title(char gender, int age);
+
+int main()
+{
+    int age;
+    char gender;
+    string title;
+
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "Enter your gender: ";
+    cin >> gender;
+
+    title = title(gender, age);
+
+    cout << title << endl;
+
+    return 0;
+}
+
+string title(char gender, int age)
+{
+    string text;
+    if (gender == 'm')
+    {
+        if (age >= 16)
+        {
+            text = "Mr.";
+        }
+        else
+        {
+            text = "Master";
+        }
+    }
+    if (gender == 'f')
+    {
+        if (age >= 16)
+        {
+            text = "Mrs.";
+        }
+        else
+        {
+            text = "Master";
+        }
+    }
+}
